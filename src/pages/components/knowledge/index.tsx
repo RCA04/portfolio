@@ -41,154 +41,146 @@ export default function  Knowledge(){
 
     return(
         <div>
-        <div className="grid grid-cols-7 mt-10 gap-30 text-7xl">
-          <div>
+        <div className="grid grid-cols-7 mt-10 gap-20  text-7xl">
+          <div className=" w-35 h-30 z-40">
             <button onClick={()=>setDesc(desc === "html" ? null : "html")}>
                 <FaHtml5/>
             </button>
-            {desc === "html" && <div>{descriptions.html}</div>}
+            {desc === "html" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.html}</p>}
           </div>
-          <div>
+          <div className=" w-35 h-30 z-40">
             <button onClick={()=>setDesc(desc === "css" ? null : "css")}>
                 <FaCss3/>
             </button>
-            {desc === "css" && <div>{descriptions.css}</div>}
+            {desc === "css" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.css}</p>}
             
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "javaScript" ? null : "javaScript")}>
+          <div className=" w-35 h-30 z-40">
+              <button onClick={()=>setDesc(desc === "javaScript" ? null : "javaScript")}>
                 <IoLogoJavascript/>
             </button>
-            {desc === "javaScript" && <div>{descriptions.javaScript}</div>}
+            {desc === "javaScript" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.javaScript}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "reactjs" ? null : "reactjs")}>
+          <div className=" w-35 h-30 z-40">
+              <button onClick={()=>setDesc(desc === "reactjs" ? null : "reactjs")}>
                 <FaReact/>
             </button>
-            {desc === "reactjs" && <div>{descriptions.reactjs}</div>}
+            {desc === "reactjs" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.reactjs}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "nextjs" ? null : "nextjs")}>
+          <div className=" w-35 h-30 z-40">
+              <button onClick={()=>setDesc(desc === "nextjs" ? null : "nextjs")}>
                 <RiNextjsLine/>
             </button>
-            {desc === "nextjs" && <div>{descriptions.nextjs}</div>}
+            {desc === "nextjs" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.nextjs}</p>}
             
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "styledcomponents" ? null : "styledcomponents")}>
+          <div className=" w-35 h-30 z-40">
+              <button onClick={()=>setDesc(desc === "styledcomponents" ? null : "styledcomponents")}>
                 <SiStyledcomponents/>
             </button>
-            {desc === "styledcomponents" && <div>{descriptions.styledcomponents}</div>}
+            {desc === "styledcomponents" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.styledcomponents}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "tailwind" ? null : "tailwind")}>
+          <div className=" w-35 h-30 z-40">
+              <button onClick={()=>setDesc(desc === "tailwind" ? null : "tailwind")}>
                 <RiTailwindCssFill/>
             </button>
-            {desc === "tailwind" && <div>{descriptions.tailwind}</div>}
+            {desc === "tailwind" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.tailwind}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "mui" ? null : "mui")}>
+          <div className=" w-35 h-30 z-30">
+              <button onClick={()=>setDesc(desc === "mui" ? null : "mui")}>
                 <SiMui/>
             </button>
-            {desc === "mui" && <div>{descriptions.mui}</div>}
+            {desc === "mui" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.mui}</p>}
               
           </div>
-          <div> 
-                        <button onClick={()=>setDesc(desc === "php" ? null : "php")}>
+          <div className=" w-35 h-30 z-30"> 
+              <button onClick={()=>setDesc(desc === "php" ? null : "php")}>
                 <FaPhp/>
             </button>
-            {desc === "php" && <div>{descriptions.php}</div>}
+            {desc === "php" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.php}</p>}
               
           </div>  
-          <div>
-                        <button onClick={()=>setDesc(desc === "laravel" ? null : "laravel")}>
+          <div className=" w-35 h-30 z-30">
+              <button onClick={()=>setDesc(desc === "laravel" ? null : "laravel")}>
                 <FaLaravel/>
             </button>
-            {desc === "laravel" && <div>{descriptions.laravel}</div>}
+            {desc === "laravel" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.laravel}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "webtoken" ? null : "webtoken")}>
+          <div className=" w-35 h-30 z-30">
+              <button onClick={()=>setDesc(desc === "webtoken" ? null : "webtoken")}>
                 <SiJsonwebtokens/>
             </button>
-            {desc === "webtoken" && <div>{descriptions.webtoken}</div>}
+            {desc === "webtoken" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.webtoken}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "mysql" ? null : "mysql")}>
+          <div className=" w-35 h-30 z-30">
+              <button onClick={()=>setDesc(desc === "mysql" ? null : "mysql")}>
                 <GrMysql/>
             </button>
-            {desc === "mysql" && <div>{descriptions.mysql}</div>}
+            {desc === "mysql" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.mysql}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "git" ? null : "git")}>
+          <div className=" w-35 h-30 z-30">
+              <button onClick={()=>setDesc(desc === "git" ? null : "git")}>
                 <FaGitAlt/>
             </button>
-            {desc === "git" && <div>{descriptions.git}</div>}
+            {desc === "git" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.git}</p>}
             
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "gitflow" ? null : "gitflow")}>
+          <div className=" w-35 h-30 z-30">
+            <button onClick={()=>setDesc(desc === "gitflow" ? null : "gitflow")}>
                 <IoGitBranchOutline/>
             </button>
-            {desc === "gitflow" && <div>{descriptions.gitflow}</div>}
+            {desc === "gitflow" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.gitflow}</p>}
             
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "npm" ? null : "npm")}>
+          <div className=" w-35 h-30 z-20">
+              <button onClick={()=>setDesc(desc === "npm" ? null : "npm")}>
                 <ImNpm/>
             </button>
-            {desc === "npm" && <div>{descriptions.npm}</div>}
+            {desc === "npm" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.npm}</p>}
             
           </div>
-          <div>
+          <div className=" w-35 h-30 z-20">
                         <button onClick={()=>setDesc(desc === "yarn" ? null : "yarn")}>
                 <FaYarn/>
             </button>
-            {desc === "yarn" && <div>{descriptions.yarn}</div>}
+            {desc === "yarn" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.yarn}</p>}
               
           </div>
-          <div>
-                        <button onClick={()=>setDesc(desc === "composer" ? null : "composer")}>
+          <div className=" w-35 h-30 z-20">
+            <button onClick={()=>setDesc(desc === "composer" ? null : "composer")}>
                 <SiComposer/>
             </button>
-            {desc === "composer" && <div>{descriptions.composer}</div>}
+            {desc === "composer" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.composer}</p>}
             
           </div>
-          <div>
+          <div className=" w-35 h-30 z-20">
                         <button onClick={()=>setDesc(desc === "eslint" ? null : "eslint")}>
                 <SiEslint/>
             </button>
-            {desc === "eslint" && <div>{descriptions.eslint}</div>}
+            {desc === "eslint" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.eslint}</p>}
             
           </div>
-          <div>
+          <div className=" w-35 h-30 z-20">
                         <button onClick={()=>setDesc(desc === "prettier" ? null : "prettier")}>
                 <SiPrettier/>
             </button>
-            {desc === "prettier" && <div>{descriptions.prettier}</div>}
+            {desc === "prettier" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.prettier}</p>}
             
           </div>
-          <div>
+          <div className=" w-35 h-30 z-20">
                         <button onClick={()=>setDesc(desc === "ubuntu" ? null : "ubuntu")}>
                 <FaUbuntu/>
             </button>
-            {desc === "ubuntu" && <div>{descriptions.ubuntu}</div>}
-            
+            {desc === "ubuntu" && <p className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.ubuntu}</p>}
           </div>
         </div>
-        
-        
-        
-        
         </div>
     )
-
-
-
 }
