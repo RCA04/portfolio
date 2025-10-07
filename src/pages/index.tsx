@@ -1,15 +1,8 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
-import { FaCss3, FaGitAlt, FaHtml5, FaLaravel, FaPhp, FaReact, FaYarn } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiComposer, SiEslint, SiJsonwebtokens, SiMui, SiPrettier, SiStyledcomponents } from "react-icons/si";
-import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
-import { GrMysql } from "react-icons/gr";
-import { IoGitBranchOutline } from "react-icons/io5";
-import { ImNpm } from "react-icons/im";
-import { FaUbuntu } from "react-icons/fa6";
 import Repos from "./components/component";
+import Knowledge from "./components/knowledge";
 
 
 
@@ -58,68 +51,7 @@ export default function Home() {
       </div>
       <div id='knowledge' className="min-h-150 flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold">Conhecimentos</h1>
-        <div className="grid grid-cols-7 mt-10 gap-30 text-7xl">
-          <div>
-            <FaHtml5/>
-          </div>
-          <div>
-            <FaCss3/>
-          </div>
-          <div>
-              <IoLogoJavascript/>
-          </div>
-          <div>
-              <FaReact/>
-          </div>
-          <div>
-            <RiNextjsLine/>
-          </div>
-          <div>
-              <SiStyledcomponents/>
-          </div>
-          <div>
-              <RiTailwindCssFill/>
-          </div>
-          <div>
-              <SiMui/>
-          </div>
-          <div> 
-              <FaPhp/>
-          </div>  
-          <div>
-              <FaLaravel/>
-          </div>
-          <div>
-              <SiJsonwebtokens/>
-          </div>
-          <div>
-              <GrMysql/>
-          </div>
-          <div>
-            <FaGitAlt/>
-          </div>
-          <div>
-            <IoGitBranchOutline/>
-          </div>
-          <div>
-            <ImNpm/>
-          </div>
-          <div>
-              <FaYarn/>
-          </div>
-          <div>
-            <SiComposer/>
-          </div>
-          <div>
-            <SiEslint/>
-          </div>
-          <div>
-            <SiPrettier/>
-          </div>
-          <div>
-            <FaUbuntu/>
-          </div>
-        </div>
+        <Knowledge/>
       </div>
       <div> projetos</div>
       <div> projetos de curso</div>
