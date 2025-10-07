@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Repos from "./components/component";
 import Knowledge from "./components/knowledge";
-
+import Footer from "./components/footer"
 
 
 
@@ -13,7 +13,7 @@ export default function Home() {
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-100 to bg-slate-400">
-      <header className="min-w-full min-h-13 flex justify-center items-center gap-10 font-bold bg-transparent backdrop-blur-sm border-b-2 border-slate-300 shadow-2xl/20 z-10 sticky top-0">
+      <header className="min-w-full min-h-13 flex justify-center items-center gap-10 font-bold bg-transparent backdrop-blur-sm border-b-2 border-slate-300 shadow-2xl/20 z-50 sticky top-0">
           <Link href='/'>Início</Link>
           <Link href='/'>Sobre</Link>
           <Link href='/'>Projetos</Link>
@@ -49,15 +49,15 @@ export default function Home() {
         em projetos que me desafiem a pensar diferente todos os dias.
         </p>
       </div>
-      <div id='knowledge' className="min-h-150 flex flex-col justify-center items-center">
+      <div id='knowledge' className="min-h-150 flex flex-col justify-center items-center p-10">
         <h1 className="text-4xl font-bold">Conhecimentos</h1>
         <Knowledge/>
       </div>
-      <div> projetos</div>
+      <div className="min-h-180"> projetos</div>
       <div> projetos de curso</div>
       </main>
-      <footer>
-      teste
+      <footer className="h-40 flex justify-center border-t-1 border-slate-300 bg-slate-300/30">
+      <Footer/>
       </footer>
 
 
