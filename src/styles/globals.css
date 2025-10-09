@@ -1,6 +1,12 @@
 @import 'tailwindcss';
+@import 'aos/dist/aos.css';
 
 body {
   padding: 0;
   margin: 0;
+}
+
+*{
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
