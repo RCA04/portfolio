@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req, res) {
+export default async function handler(req :any, res: any) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Método não permitido' });
   }
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     });
 
     res.status(200).json({ success: true, data });
-  } catch (error) {
+  } catch (error:any) {
     res.status(500).json({ error: error.message });
   }
 }
