@@ -51,7 +51,6 @@ export default function Carousel(){
                  hover:scale-110
                  ">
                     <a key={i.id} href={i.html_url}>Ver</a>
-
                         </button>
                     </div>    
                 </div>
