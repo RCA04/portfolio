@@ -13,10 +13,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-100 to bg-slate-400">
       <header className="min-w-full min-h-13 flex justify-center items-center gap-10 font-bold bg-transparent backdrop-blur-sm border-b-2 border-slate-300 shadow-2xl/20 z-50 sticky top-0">
-          <Link href='/'>Início</Link>
-          <Link href='/'>Sobre</Link>
+          <Link href='/about'>Início</Link>
           <Link href='/'>Projetos</Link>
-          <Link href='/'>Projetos de curso</Link>
           <Link href='/'>Contato</Link>
       </header>
       <main>
@@ -52,7 +50,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold">Conhecimentos</h1>
         <Knowledge/>
       </div>
-      <div className="min-h-180"> <Carousel/></div>
+      <div className="min-h-auto my-30 p-10"> <Carousel/></div>
       </main>
       <footer className="h-40 flex justify-center border-t-1 border-slate-300 bg-slate-300/30">
       <Footer/>
