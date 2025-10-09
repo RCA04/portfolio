@@ -5,13 +5,19 @@ import { BsWhatsapp } from "react-icons/bs"
 import { CiLinkedin } from "react-icons/ci"
 import { FaGithub} from "react-icons/fa"
 import { IoIosMail } from "react-icons/io"
-
-
-
-
+import { useState } from "react"
+import Modal from "./components"
 
 
 export default function Footer() {
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+    
+    
+    function handleModal(){
+        setModalIsOpen(!modalIsOpen);
+    }
+    
+    
     return(
         <div className="w-full">
 
@@ -44,9 +50,15 @@ export default function Footer() {
                  hover:shadow-2xl/50 
                  duration-200 ease-in
                  hover:scale-105
-                 ">
+                 "
+                 onClick={handleModal}
+                 >
                 Enviar Email
                 </button>
+                <Modal
+                isOpen={modalIsOpen}
+                onClose={handleModal}
+                />
             </div>
 
         </div>
