@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import AOSWrapper from "../../AOSWrapper";
 
 interface ModalProps{
     isOpen?: boolean;
@@ -39,7 +40,9 @@ export default function Modal({isOpen, onClose}: ModalProps){
     })
     
     return(
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+        <AOSWrapper>
+
+    <div data-aos='zoom-in' data-aos-duration="600" className="fixed inset-0 z-50 flex items-center justify-center">
         <div className="absolute inset-0 bg-transparent backdrop-blur-sm" onClick={onClose}/>
         <div className=" relative z-10 h-[80%] sm:h-full max-h-140 w-full max-w-100 min-w-100  bg-slate-300 p-6 border-1 border-slate-100 rounded-3xl" >
                 <div className="mt-6 flex flex-col items-start">
@@ -67,12 +70,12 @@ export default function Modal({isOpen, onClose}: ModalProps){
                 <div className="flex w-full justify-center">
             <button type='button' onClick={() => sendEmail()}
                 className="absolute m-4 bottom-0 border-2 border-slate-200 w-1/2 h-15 cursor-pointer
-                 text-xl font-bold rounded-4xl
-                 hover:bg-slate-200 hover:mb-3
-                 hover:shadow-2xl/50 
-                 duration-200 ease-in
-                 hover:scale-105
-                 "
+                text-xl font-bold rounded-4xl
+                hover:bg-slate-200 hover:mb-3
+                hover:shadow-2xl/50 
+                duration-200 ease-in
+                hover:scale-105
+                "
                 >
                 Enviar
             </button>
@@ -82,5 +85,6 @@ export default function Modal({isOpen, onClose}: ModalProps){
         </div>
 
     </div>    
+                    </AOSWrapper>
     )
 }

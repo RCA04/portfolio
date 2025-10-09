@@ -7,6 +7,7 @@ import { FaGithub} from "react-icons/fa"
 import { IoIosMail } from "react-icons/io"
 import { useState } from "react"
 import Modal from "./components"
+import AOSWrapper from "../AOSWrapper"
 
 
 export default function Footer() {
@@ -19,6 +20,8 @@ export default function Footer() {
     
     
     return(
+        <AOSWrapper>
+
         <div className="w-full h-full">
 
             <div className="flex flex-col sm:flex-row items-center gap-10 w-full mt-3 justify-center text-2xl">
@@ -62,10 +65,11 @@ export default function Footer() {
                 <Modal
                 isOpen={modalIsOpen}
                 onClose={handleModal}
-                />
+                data-aos='fade-down' />
             </div>
 
         </div>
+                </AOSWrapper>
     )
 
 }
