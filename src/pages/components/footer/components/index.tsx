@@ -41,7 +41,7 @@ export default function Modal({isOpen, onClose}: ModalProps){
     return(
     <div className="fixed inset-0 z-50 flex items-center justify-center">
         <div className="absolute inset-0 bg-transparent backdrop-blur-sm" onClick={onClose}/>
-        <div className=" relative z-10 h-full max-h-140 w-full max-w-100 min-w-100  bg-slate-300 p-6 border-1 border-slate-100 rounded-3xl" >
+        <div className=" relative z-10 h-[80%] sm:h-full max-h-140 w-full max-w-100 min-w-100  bg-slate-300 p-6 border-1 border-slate-100 rounded-3xl" >
                 <div className="mt-6 flex flex-col items-start">
                     <input
                     type="text"
@@ -61,7 +61,7 @@ export default function Modal({isOpen, onClose}: ModalProps){
                     placeholder="Mensagem"
                     value={form.html}
                     onChange={(e) => setForm({...form, html: e.target.value})}
-                    className="w-1/2 left-0 focus:w-full focus:min-h-60 my-5 p-2 bg-slate-100 rounded-sm transition-all duration-500"
+                    className="w-1/2 left-0 focus:w-full focus:min-h-30 sm:focus:min-h-60 my-5 p-2 bg-slate-100 rounded-sm transition-all duration-500"
                     />
                 </div>
                 <div className="flex w-full justify-center">

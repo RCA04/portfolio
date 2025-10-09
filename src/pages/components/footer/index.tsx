@@ -19,9 +19,9 @@ export default function Footer() {
     
     
     return(
-        <div className="w-full">
+        <div className="w-full h-full">
 
-            <div className="flex gap-10 w-full mt-3 justify-center text-2xl">
+            <div className="flex flex-col sm:flex-row items-center gap-10 w-full mt-3 justify-center text-2xl">
                     <div className=" gap-1 flex items-center">
                     <CiLinkedin/>
                     <Link href='https://www.linkedin.com/in/ryan-costa04'>Ryan da Costa araújo</Link>
@@ -46,8 +46,12 @@ export default function Footer() {
             <div className="flex justify-center items-center mt-5 h-15">
                 <button className="border-1 border-slate-300 w-1/2 h-15 cursor-pointer
                  text-xl font-bold rounded-4xl
-                 hover:bg-slate-300 hover:mb-3
-                 hover:shadow-2xl/50 
+                 sm:hover:bg-slate-300 hover:mb-3
+                 sm:hover:shadow-2xl/50
+                 bg-slate-300
+                 sm:bg-slate-400 
+                 mb-3
+                 sm:mb-0
                  duration-200 ease-in
                  hover:scale-105
                  "

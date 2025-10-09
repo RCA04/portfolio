@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import AOSWrapper from "../AOSWrapper";
 
 
 
@@ -26,6 +27,8 @@ export default function Carousel(){
 
     
     return(
+        <AOSWrapper>
+
         <div className="w-full h-full">
                 <div className="flex justify-center items-center flex-col">
                 <h1 className="text-4xl font-bold p-1">Projetos</h1>
@@ -35,7 +38,7 @@ export default function Carousel(){
             {repos.map((i)=>{
                 return(
                     
-                    <div className="flex left-0 flex-col m-5 p-3 border-1 border-slate-200 bg-slate-400 rounded-xl">
+                    <div data-aos='zoom-out' data-aos-duration='600' className="flex left-0 flex-col m-5 p-3 border-1 border-slate-200 bg-slate-400 rounded-xl">
                    <p key={i.id}><strong>Nome: </strong>{i.name}</p>
                     <div className="flex my-2">
                     <p key={i.id}><strong>Descrição: </strong>{i.description}</p>
@@ -59,5 +62,6 @@ export default function Carousel(){
 
             </div>
         </div>
+                </AOSWrapper>
     )
 }
