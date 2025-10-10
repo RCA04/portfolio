@@ -28,7 +28,6 @@ export default function Carousel(){
     })()
     },[]);
 
-    console.log(repos)
 
     
     return(

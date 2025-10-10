@@ -14,7 +14,7 @@ export default function Home() {
   return (
   <AOSWrapper>
 
-    <div className="min-h-screen bg-gradient-to-b from-slate-100 to bg-slate-400">
+    <div className="min-h-screen min-w-screen max-w-1000 bg-gradient-to-b from-slate-100 to bg-slate-400">
       <header className="min-w-full min-h-13 flex justify-center items-center gap-10 font-bold bg-transparent backdrop-blur-sm border-b-2 border-slate-300 shadow-2xl/20 z-50 sticky top-0">
           <Link href='#about'>Sobre</Link>
           <Link href='#knowledge'>Conhecimentos</Link>
