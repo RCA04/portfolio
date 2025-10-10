@@ -1,14 +1,18 @@
 "use client"
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import AOSWrapper from "../AOSWrapper";
 
-
+interface RepoProps{
+  id:number;
+  name:string;
+  description:string;
+  html_url:string;
+}
 
 export default function Carousel(){
     
-    const [repos, setRepos] = useState<any[]>([]);
+    const [repos, setRepos] = useState<RepoProps[]>([]);
 
     useEffect(()=>{
 
@@ -17,8 +21,9 @@ export default function Carousel(){
             const res = await fetch("https://api.github.com/users/RCA04/repos")
             const data = await res.json();
             setRepos(data);
-        }catch(error:any){
-            console.error(error.message);
+        }catch(error:unknown){
+            const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
+            console.error(errorMessage);
         }
     })()
     },[]);
@@ -38,10 +43,10 @@ export default function Carousel(){
             {repos.map((i)=>{
                 return(
                     
-                    <div data-aos='zoom-out' data-aos-duration='600' className="flex left-0 flex-col m-5 p-3 border-1 border-slate-200 bg-slate-400 rounded-xl">
-                   <p key={i.id}><strong>Nome: </strong>{i.name}</p>
+                <div key={i.id} data-aos='zoom-out' data-aos-duration='600' className="flex left-0 flex-col m-5 p-3 border-1 border-slate-200 bg-slate-400 rounded-xl">
+                   <p><strong>Nome: </strong>{i.name}</p>
                     <div className="flex my-2">
-                    <p key={i.id}><strong>Descrição: </strong>{i.description}</p>
+                    <p ><strong>Descrição: </strong>{i.description ?? "Sem descriçao"}</p>
                     </div>
                     <div className="flex h-full items-end mt-2 ml-2">
                         <button className="border-1 border-slate-300 w-1/2 h-15 cursor-pointer
@@ -53,7 +58,7 @@ export default function Carousel(){
                  duration-200 ease-in
                  hover:scale-110
                  ">
-                    <a key={i.id} href={i.html_url}>Ver</a>
+                    <a href={i.html_url}>Ver</a>
                         </button>
                     </div>    
                 </div>

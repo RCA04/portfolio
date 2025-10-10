@@ -9,7 +9,6 @@ import { GrMysql } from "react-icons/gr";
 import { IoGitBranchOutline } from "react-icons/io5";
 import { ImNpm } from "react-icons/im";
 import { FaUbuntu } from "react-icons/fa6";
-import { DiJavascript } from "react-icons/di";
 import AOSWrapper from "../AOSWrapper";
 
 export default function  Knowledge(){

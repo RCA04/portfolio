@@ -12,10 +12,16 @@ interface ModalProps{
 
 
 export default function Modal({isOpen, onClose}: ModalProps){
-    if (!isOpen) return null
-    async function sendEmail(){
+    
+    const [form, setForm] = useState({
+        subject: '',
+        html: '',
+        from: '',
+    })
+
+     async function sendEmail(){
      try{
-         const response = await fetch('/api/send', {
+           fetch('/api/send', {
              method: 'POST',
              headers: {
                 'Content-Type': 'application/json',
@@ -25,7 +31,6 @@ export default function Modal({isOpen, onClose}: ModalProps){
                 html: `${form.html} <br/> Email: "${form.from}"`,
              }),
             })
-        const data = await response.json();
         Swal.fire({
             title:'Email enviado com sucesso!',
             icon:'success',
@@ -34,6 +39,7 @@ export default function Modal({isOpen, onClose}: ModalProps){
 
         })
      } catch(error){
+        console.log(error)
         Swal.fire({
             title:'Erro ao enviar email',
             icon:'error',
@@ -45,11 +51,8 @@ export default function Modal({isOpen, onClose}: ModalProps){
      }
     };
     
-    const [form, setForm] = useState({
-        subject: '',
-        html: '',
-        from: '',
-    })
+    if (!isOpen) return null
+
     
     return(
         <AOSWrapper>
