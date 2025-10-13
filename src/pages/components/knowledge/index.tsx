@@ -43,7 +43,7 @@ export default function  Knowledge(){
       <AOSWrapper>
 
         <div>
-        <div className="grid grid-cols-2 sm:grid-cols-7 mt-10 gap-20 text-5xl sm:text-7xl">
+        <div className="grid grid-cols-2 justify-center items-center sm:grid-cols-5 md:grid-cols-7 mt-10 gap-20 text-5xl sm:text-7xl">
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='900' data-aos-duration='800' className=" w-35 h-30 z-40 sm:block  flex flex-col items-center justify-center">
             <button className="cursor-pointer" onClick={()=>setDesc(desc === "html" ? null : "html")}>
                 <FaHtml5/>
