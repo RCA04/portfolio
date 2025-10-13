@@ -123,7 +123,7 @@ export default function  Knowledge(){
               )}
             </div>
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 z-40 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 md:z-30 z-40 flex flex-col items-center justify-center gap-3">
               <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "styledcomponents" ? null : "styledcomponents")}>
                 <SiStyledcomponents/>
             </button>
@@ -139,7 +139,7 @@ export default function  Knowledge(){
             </div>
               
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1200' data-aos-duration='800' className=" w-35 h-30 z-40 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1200' data-aos-duration='800' className=" w-35 h-30 md:z-30 z-40 flex flex-col items-center justify-center gap-3">
               <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "tailwind" ? null : "tailwind")}>
                 <RiTailwindCssFill/>
             </button>
@@ -203,7 +203,7 @@ export default function  Knowledge(){
             </div>
               
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1050' data-aos-duration='800' className=" w-35 h-30 z-30 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1050' data-aos-duration='800' className=" w-35 h-30 md:z-20 z-30 flex flex-col items-center justify-center gap-3">
               <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "webtoken" ? null : "webtoken")}>
                 <SiJsonwebtokens/>
             </button>
@@ -219,7 +219,7 @@ export default function  Knowledge(){
             </div>
               
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1100' data-aos-duration='800' className=" w-35 h-30 z-30 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1100' data-aos-duration='800' className=" w-35 h-30 md:z-20 z-30 flex flex-col items-center justify-center gap-3">
               <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "mysql" ? null : "mysql")}>
                 <GrMysql/>
             </button>
@@ -235,7 +235,7 @@ export default function  Knowledge(){
             </div>
               
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 z-30 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 md:z-20 z-30 flex flex-col items-center justify-center gap-3">
             <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "git" ? null : "git")}>
                 <FaGitAlt/>
             </button>
@@ -251,7 +251,7 @@ export default function  Knowledge(){
             </div>
             
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1200' data-aos-duration='800' className=" w-35 h-30 z-30 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1200' data-aos-duration='800' className=" w-35 h-30 md:z-20 z-30 flex flex-col items-center justify-center gap-3">
             <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "gitflow" ? null : "gitflow")}>
                 <IoGitBranchOutline/>
             </button>
@@ -283,7 +283,7 @@ export default function  Knowledge(){
             </div>
             
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='950' data-aos-duration='800' className=" w-35 h-30 z-20 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='950' data-aos-duration='800' className=" w-35 h-30 md:z-10 z-20 flex flex-col items-center justify-center gap-3">
                         <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "yarn" ? null : "yarn")}>
                 <FaYarn/>
             </button>
@@ -299,7 +299,7 @@ export default function  Knowledge(){
             </div>
               
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800' className=" w-35 h-30 z-20 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800' className=" w-35 h-30 md:z-10 z-20 flex flex-col items-center justify-center gap-3">
             <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "composer" ? null : "composer")}>
                 <SiComposer/>
             </button>
@@ -315,7 +315,7 @@ export default function  Knowledge(){
             </div>
             
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1050' data-aos-duration='800' className=" w-35 h-30 z-20 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1050' data-aos-duration='800' className=" w-35 h-30 md:z-10 z-20 flex flex-col items-center justify-center gap-3">
                         <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "eslint" ? null : "eslint")}>
                 <SiEslint/>
             </button>
@@ -331,7 +331,7 @@ export default function  Knowledge(){
             </div>
             
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1100' data-aos-duration='800' className=" w-35 h-30 z-20 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1100' data-aos-duration='800' className=" w-35 h-30 md:z-10 z-20 flex flex-col items-center justify-center gap-3">
                         <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "prettier" ? null : "prettier")}>
                 <SiPrettier/>
             </button>
@@ -347,7 +347,7 @@ export default function  Knowledge(){
             </div>
             
           </div>
-          <div data-aos='flip-left'  data-aos-easing='ease-in' data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 z-20 flex flex-col items-center justify-center gap-3">
+          <div data-aos='flip-left'  data-aos-easing='ease-in' data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 md:z-10 z-20 flex flex-col items-center justify-center gap-3">
                         <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "ubuntu" ? null : "ubuntu")}>
                 <FaUbuntu/>
             </button>
