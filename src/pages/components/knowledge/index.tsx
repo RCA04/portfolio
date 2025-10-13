@@ -42,8 +42,8 @@ export default function  Knowledge(){
     return(
       <AOSWrapper>
 
-        <div className="max-w-190 xl:max-w-full px-4 sm:px-6">
-        <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 place-items-center gap-y-8 sm:gap-y-10 lg:gap-y-12 gap-x-6 sm:gap-x-8 lg:gap-x-10 mt-10 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-purple-300">
+        <div className="max-w-190 xl:max-w-full px-2 sm:px-4 lg:px-6">
+        <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 place-items-center gap-y-6 sm:gap-y-8 lg:gap-y-10 xl:gap-y-12 gap-x-4 sm:gap-x-6 lg:gap-x-8 xl:gap-x-10 mt-8 sm:mt-10 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-purple-300">
         <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800'  className=" w-35 h-30 z-40 flex flex-col items-center justify-center gap-3">
         <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105" onClick={()=>setDesc(desc === "html" ? null : "html")}>
                 <FaHtml5/>
