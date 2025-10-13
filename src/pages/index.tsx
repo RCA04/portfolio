@@ -51,7 +51,7 @@ export default function Home() {
         em projetos que me desafiem a pensar diferente todos os dias.
         </p>
       </div>
-      <div data-aos="fade-down" data-aos-duration='800' id='knowledge' className="min-h-150 flex flex-col justify-center items-center pt-15 p-10">
+      <div data-aos="fade-down" data-aos-duration='800' id='knowledge' className="min-h-150 w-full flex flex-col max-w-full justify-center items-center mr-10 p-10 pt-7 xl:pt-15 xl:p-10">
         <h1 className="text-4xl font-bold">Conhecimentos</h1>
         <Knowledge/>
       </div>

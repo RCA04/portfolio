@@ -42,7 +42,7 @@ export default function  Knowledge(){
     return(
       <AOSWrapper>
 
-        <div>
+        <div className="max-w-190 xl:max-w-full">
         <div className="grid grid-cols-2 justify-center items-center sm:grid-cols-5 xl:grid-cols-7 lg:gap-20  mt-10 gap-10 text-5xl sm:text-7xl">
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='900' data-aos-duration='800' className=" w-35 h-30 z-40 xl:block  flex flex-col items-center justify-center">
             <button className="cursor-pointer" onClick={()=>setDesc(desc === "html" ? null : "html")}>
@@ -93,21 +93,21 @@ export default function  Knowledge(){
             {desc === "tailwind" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.tailwind}</p>}
               
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='900' data-aos-duration='800' className=" w-35 h-30 z-40 xl:block flex flex-col items-center justify-center">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='900' data-aos-duration='800' className=" w-35 h-30 z-30 xl:block flex flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "mui" ? null : "mui")}>
                 <SiMui/>
             </button>
             {desc === "mui" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.mui}</p>}
               
           </div>
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='950' data-aos-duration='800' className=" w-35 h-30  z-40 xl:block flex flex-col items-center justify-center"> 
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='950' data-aos-duration='800' className=" w-35 h-30  z-30 xl:block flex flex-col items-center justify-center"> 
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "php" ? null : "php")}>
                 <FaPhp/>
             </button>
             {desc === "php" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.php}</p>}
               
           </div>  
-          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800' className=" w-35 h-30 z-40 xl:block flex flex-col items-center justify-center">
+          <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800' className=" w-35 h-30 z-30 xl:block flex flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "laravel" ? null : "laravel")}>
                 <FaLaravel/>
             </button>
