@@ -34,31 +34,41 @@ export default function Carousel(){
         <AOSWrapper>
 
         <div className="w-full h-full">
-                <div className="flex justify-center items-center flex-col">
-                <h1 className="text-4xl font-bold p-1 text-purple-300">Projetos</h1>
-                <span className="text-md mt-2 p-1 font-bold text-slate-300">os projetos sempre estão atualizados</span>
+                <div className="flex justify-center items-center flex-col mb-16">
+                <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    Projetos
+                </h1>
+                <span className="text-lg font-medium text-slate-300 bg-purple-900/30 px-6 py-2 rounded-full border border-purple-500/30">
+                    ✨ Projetos sempre atualizados
+                </span>
                 </div>
-            <div className="grid grid-cols-1 mt-20 sm:grid-cols-3" >
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4" >
             {repos.map((i)=>{
                 return(
                     
-                <div key={i.id} data-aos='zoom-out' data-aos-duration='600' className="flex left-0 flex-col m-5 p-3 border-1 border-purple-500/60 bg-purple-900/30 rounded-xl text-slate-200">
-                   <p><strong>Nome: </strong>{i.name}</p>
-                    <div className="flex my-2">
-                    <p ><strong>Descrição: </strong>{i.description ?? "Sem descriçao"}</p>
+                <div key={i.id} data-aos='zoom-out' data-aos-duration='600' className="group relative flex flex-col h-full bg-gradient-to-br from-purple-900/40 to-slate-800/40 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-6 text-slate-200 shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105 hover:border-purple-400/60">
+                    {/* Ícone decorativo */}
+                    <div className="absolute top-4 right-4 w-3 h-3 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div className="flex-grow">
+                        <h3 className="text-xl font-bold text-purple-300 mb-2 group-hover:text-purple-200 transition-colors">
+                            {i.name}
+                        </h3>
+                        <p className="text-slate-300 leading-relaxed">
+                            {i.description ?? "Projeto sem descrição disponível"}
+                        </p>
                     </div>
-                    <div className="flex h-full items-end mt-2 ml-2">
-                        <button className="border-1 border-purple-500/60 w-1/2 h-15 cursor-pointer
-                 text-xl font-bold rounded-4xl
-                 bg-purple-900/30
-                 sm:bg-purple-800/30
-                 sm:hover:bg-purple-800/50 
-                 hover:shadow-2xl/50 
-                 duration-200 ease-in
-                 hover:scale-110
-                 ">
-                    <a href={i.html_url}>Ver</a>
-                        </button>
+                    
+                    <div className="mt-6 pt-4">
+                        <a 
+                            href={i.html_url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+                        >
+                            <span className="mr-2">👁️</span>
+                            Ver Projeto
+                        </a>
                     </div>    
                 </div>
                 )})
