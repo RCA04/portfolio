@@ -43,18 +43,18 @@ export default function  Knowledge(){
       <AOSWrapper>
 
         <div className="max-w-190 xl:max-w-full">
-        <div className="grid grid-cols-2 justify-center items-center sm:grid-cols-5 xl:grid-cols-7 lg:gap-20  mt-10 gap-10 text-5xl sm:text-7xl">
+        <div className="grid grid-cols-2 justify-center items-center sm:grid-cols-5 xl:grid-cols-7 lg:gap-20  mt-10 gap-10 text-5xl sm:text-7xl text-purple-300">
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='900' data-aos-duration='800' className=" w-35 h-30 z-40 block flex-col items-center justify-center">
             <button className="cursor-pointer" onClick={()=>setDesc(desc === "html" ? null : "html")}>
                 <FaHtml5/>
             </button>
-            {desc === "html" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.html}</p>}
+            {desc === "html" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.html}</p>}
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='950' data-aos-duration='800' className=" w-35 h-30 z-40 block flex-col items-center justify-center">
             <button className="cursor-pointer" onClick={()=>setDesc(desc === "css" ? null : "css")}>
                 <FaCss3/>
             </button>
-            {desc === "css" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex text-ellipsis justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.css}</p>}
+            {desc === "css" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex text-ellipsis justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.css}</p>}
             
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800'  className=" w-35 h-30 z-40 block flex-col items-center justify-center">
@@ -62,126 +62,126 @@ export default function  Knowledge(){
                 <IoLogoJavascript/>
             </button>
             {desc === "javaScript" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out" 
-             className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.javaScript}</p>}
+             className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.javaScript}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1050' data-aos-duration='800' className=" w-35 h-30 z-40 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "reactjs" ? null : "reactjs")}>
                 <FaReact/>
             </button>
-            {desc === "reactjs" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.reactjs}</p>}
+            {desc === "reactjs" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.reactjs}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1100' data-aos-duration='800' className=" w-35 h-30 z-40 block  flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "nextjs" ? null : "nextjs")}>
                 <RiNextjsLine/>
             </button>
-            {desc === "nextjs" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out" data-aos-ffset='300' className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.nextjs}</p>}
+            {desc === "nextjs" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out" data-aos-ffset='300' className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.nextjs}</p>}
             
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 z-40 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "styledcomponents" ? null : "styledcomponents")}>
                 <SiStyledcomponents/>
             </button>
-            {desc === "styledcomponents" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.styledcomponents}</p>}
+            {desc === "styledcomponents" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.styledcomponents}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1200' data-aos-duration='800' className=" w-35 h-30 z-40 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "tailwind" ? null : "tailwind")}>
                 <RiTailwindCssFill/>
             </button>
-            {desc === "tailwind" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.tailwind}</p>}
+            {desc === "tailwind" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.tailwind}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='900' data-aos-duration='800' className=" w-35 h-30 z-30 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "mui" ? null : "mui")}>
                 <SiMui/>
             </button>
-            {desc === "mui" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.mui}</p>}
+            {desc === "mui" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.mui}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='950' data-aos-duration='800' className=" w-35 h-30  z-30 block flex-col items-center justify-center"> 
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "php" ? null : "php")}>
                 <FaPhp/>
             </button>
-            {desc === "php" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.php}</p>}
+            {desc === "php" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.php}</p>}
               
           </div>  
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800' className=" w-35 h-30 z-30 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "laravel" ? null : "laravel")}>
                 <FaLaravel/>
             </button>
-            {desc === "laravel" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.laravel}</p>}
+            {desc === "laravel" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.laravel}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1050' data-aos-duration='800' className=" w-35 h-30 z-30 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "webtoken" ? null : "webtoken")}>
                 <SiJsonwebtokens/>
             </button>
-            {desc === "webtoken" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.webtoken}</p>}
+            {desc === "webtoken" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.webtoken}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1100' data-aos-duration='800' className=" w-35 h-30 z-30 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "mysql" ? null : "mysql")}>
                 <GrMysql/>
             </button>
-            {desc === "mysql" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.mysql}</p>}
+            {desc === "mysql" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.mysql}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 z-30 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "git" ? null : "git")}>
                 <FaGitAlt/>
             </button>
-            {desc === "git" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.git}</p>}
+            {desc === "git" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.git}</p>}
             
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1200' data-aos-duration='800' className=" w-35 h-30 z-30 block flex-col items-center justify-center">
             <button className="cursor-pointer" onClick={()=>setDesc(desc === "gitflow" ? null : "gitflow")}>
                 <IoGitBranchOutline/>
             </button>
-            {desc === "gitflow" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.gitflow}</p>}
+            {desc === "gitflow" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.gitflow}</p>}
             
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='900' data-aos-duration='800' className=" w-35 h-30 z-20 block flex-col items-center justify-center">
               <button className="cursor-pointer" onClick={()=>setDesc(desc === "npm" ? null : "npm")}>
                 <ImNpm/>
             </button>
-            {desc === "npm" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.npm}</p>}
+            {desc === "npm" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.npm}</p>}
             
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='950' data-aos-duration='800' className=" w-35 h-30 z-20 block flex-col items-center justify-center">
                         <button className="cursor-pointer" onClick={()=>setDesc(desc === "yarn" ? null : "yarn")}>
                 <FaYarn/>
             </button>
-            {desc === "yarn" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.yarn}</p>}
+            {desc === "yarn" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.yarn}</p>}
               
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1000' data-aos-duration='800' className=" w-35 h-30 z-20 block flex-col items-center justify-center">
             <button className="cursor-pointer" onClick={()=>setDesc(desc === "composer" ? null : "composer")}>
                 <SiComposer/>
             </button>
-            {desc === "composer" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.composer}</p>}
+            {desc === "composer" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.composer}</p>}
             
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1050' data-aos-duration='800' className=" w-35 h-30 z-20 block flex-col items-center justify-center">
                         <button className="cursor-pointer" onClick={()=>setDesc(desc === "eslint" ? null : "eslint")}>
                 <SiEslint/>
             </button>
-            {desc === "eslint" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.eslint}</p>}
+            {desc === "eslint" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.eslint}</p>}
             
           </div>
           <div data-aos='flip-left' data-aos-easing="ease-in-out" data-aos-delay='1100' data-aos-duration='800' className=" w-35 h-30 z-20 block flex-col items-center justify-center">
                         <button className="cursor-pointer" onClick={()=>setDesc(desc === "prettier" ? null : "prettier")}>
                 <SiPrettier/>
             </button>
-            {desc === "prettier" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.prettier}</p>}
+            {desc === "prettier" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.prettier}</p>}
             
           </div>
           <div data-aos='flip-left'  data-aos-easing='ease-in' data-aos-delay='1150' data-aos-duration='800' className=" w-35 h-30 z-20 block flex-col items-center justify-center">
                         <button className="cursor-pointer" onClick={()=>setDesc(desc === "ubuntu" ? null : "ubuntu")}>
                 <FaUbuntu/>
             </button>
-            {desc === "ubuntu" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-slate-300 bg-transparent rounded-2xl backdrop-blur-lg p-2">{descriptions.ubuntu}</p>}
+            {desc === "ubuntu" && <p data-aos='fade-left' data-aos-duration='300' data-aos-easing="ease-in-out"  className="flex justify-center text-sm font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg p-2 text-slate-200">{descriptions.ubuntu}</p>}
           </div>
         </div>
         </div>

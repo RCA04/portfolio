@@ -20,7 +20,7 @@ export default function Footer() {
     
     return(
 
-        <div className="w-full h-full">
+        <div className="w-full h-full text-slate-200">
 
             <div className="flex flex-col sm:flex-row items-center gap-10 w-full mt-3 justify-center text-2xl">
                     <div className=" gap-1 flex items-center">
@@ -45,12 +45,12 @@ export default function Footer() {
             </div>
 
             <div className="flex justify-center items-center mt-5 h-15">
-                <button className="border-1 border-slate-300 w-1/2 h-15 cursor-pointer
+                <button className="border-1 border-purple-500/60 w-1/2 h-15 cursor-pointer
                  text-xl font-bold rounded-4xl
-                 sm:hover:bg-slate-300 hover:mb-3
+                 sm:hover:bg-purple-800/40 hover:mb-3
                  sm:hover:shadow-2xl/50
-                 bg-slate-300
-                 sm:bg-slate-400 
+                 bg-purple-900/30
+                 sm:bg-purple-800/30
                  mb-3
                  sm:mb-0
                  duration-200 ease-in
