@@ -22,26 +22,26 @@ export default function Footer() {
 
         <div className="w-full h-full text-slate-200">
 
-            <div className="flex flex-col sm:flex-row items-center gap-10 w-full mt-3 justify-center text-2xl">
-                    <div className=" gap-1 flex items-center">
+            <div className="flex flex-col sm:flex-row items-center gap-6 w-full mt-3 justify-center text-lg">
+                    <Link href='https://www.linkedin.com/in/ryan-costa04' className="gap-2 flex items-center px-4 py-2 rounded-full bg-purple-900/30 border border-purple-500/30 hover:border-purple-400/60 transition-colors">
                     <CiLinkedin/>
-                    <Link href='https://www.linkedin.com/in/ryan-costa04'>Ryan da Costa araújo</Link>
-                    </div>
+                    <span>Ryan da Costa Araújo</span>
+                    </Link>
                     
-                    <div className=" gap-1 flex items-center">
+                    <Link href='https://github.com/RCA04' className="gap-2 flex items-center px-4 py-2 rounded-full bg-purple-900/30 border border-purple-500/30 hover:border-purple-400/60 transition-colors">
                     <FaGithub/>
-                    <Link href='https://github.com/RCA04'>RCA04</Link>
-                    </div>
+                    <span>RCA04</span>
+                    </Link>
                     
-                    <div className="gap-1 flex items-center">
+                    <div className="gap-2 flex items-center px-4 py-2 rounded-full bg-purple-900/30 border border-purple-500/30">
                     <IoIosMail/>
                     <p>ryan04.dev@gmail.com</p>
                     </div>
                     
-                    <div className="gap-1 flex items-center">
+                    <Link href='https://wa.me/5561985821807' className="gap-2 flex items-center px-4 py-2 rounded-full bg-purple-900/30 border border-purple-500/30 hover:border-purple-400/60 transition-colors">
                     <BsWhatsapp/>
-                    <Link href='https://wa.me/5561985821807'>Fale comigo</Link>
-                    </div>
+                    <span>Fale comigo</span>
+                    </Link>
             </div>
 
             <div className="flex justify-center items-center mt-5 h-15">
