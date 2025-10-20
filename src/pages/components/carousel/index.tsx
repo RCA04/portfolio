@@ -35,18 +35,18 @@ export default function Carousel(){
 
         <div className="w-full h-full">
                 <div className="flex justify-center items-center flex-col mb-12 sm:mb-16 px-4">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent text-center">
+                <h1 data-aos="fade-down" data-aos-duration="500" className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent text-center">
                     Projetos
                 </h1>
-                <span className="text-sm sm:text-base lg:text-lg font-medium text-slate-300 bg-purple-900/30 px-4 sm:px-6 py-2 rounded-full border border-purple-500/30 text-center">
-                    ✨ Projetos sempre atualizados
+                <span data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" className="text-sm sm:text-base lg:text-lg font-medium text-slate-300 bg-purple-900/30 px-4 sm:px-6 py-2 rounded-full border border-purple-500/30 text-center">
+                    ✨ Lista de projeto integrados com a API do GitHub ✨
                 </span>
                 </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4" >
             {repos.map((i)=>{
                 return(
                     
-                <div key={i.id} data-aos='zoom-out' data-aos-duration='600' className="group relative flex flex-col h-full bg-gradient-to-br from-purple-900/40 to-slate-800/40 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-4 sm:p-6 text-slate-200 shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105 hover:border-purple-400/60">
+                <div key={i.id} data-aos='fade-up' data-aos-duration='500' data-aos-delay={`${Math.random() * 300 + 300}`} className="group relative flex flex-col h-full bg-gradient-to-br from-purple-900/40 to-slate-800/40 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-4 sm:p-6 text-slate-200 shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105 hover:border-purple-400/60">
                     {/* Ícone decorativo */}
                     <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-2 h-2 sm:w-3 sm:h-3 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-60 group-hover:opacity-100 transition-opacity"></div>
                     
