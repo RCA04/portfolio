@@ -42,29 +42,29 @@ windows: "Uso o Windows como sistema operacional para o dia a dia. Apesar de nã
     return(
       <AOSWrapper>
 
-        <div className="max-w-190 xl:max-w-full px-2 sm:px-4 lg:px-6 mt-10">
-        <div className=" place-items-center gap-y-10 sm:gap-y-12 lg:gap-y-14 xl:gap-y-16 gap-x-4 sm:gap-x-6 lg:gap-x-8 xl:gap-x-10 mt-8 sm:mt-10 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-purple-300">
+        <div className="max-w-full px-2 sm:px-4 lg:px-6 mt-6 sm:mt-10">
+        <div className=" place-items-center gap-y-6 sm:gap-y-8 lg:gap-y-10 xl:gap-y-12 gap-x-2 sm:gap-x-4 lg:gap-x-6 xl:gap-x-8 mt-4 sm:mt-6 lg:mt-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-purple-300">
 
-    <div id='frontend' data-aos="fade-up" data-aos-duration="500" className="grid grid-cols-2 mt-15 mb-15">
+    <div id='frontend' data-aos="fade-up" data-aos-duration="500" className="grid grid-cols-1 sm:grid-cols-2 mt-8 sm:mt-12 lg:mt-15 mb-8 sm:mb-12 lg:mb-15 gap-4 sm:gap-6">
 
         <div className="h-full w-full flex justify-center items-center">
-        <p className="font-bold text-2xl sm:text-3xl lg:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">Front-end</p>
+        <p className="font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">Front-end</p>
         </div>
 
-        <div className="grid grid-cols-4 items-center justify-center w-full h-full">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 items-center justify-center w-full h-full gap-2 sm:gap-4 mt-2 sm:mt-0">
 
-          <div className="w-35 h-30 z-40 flex flex-col items-center justify-center gap-3">
-          <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105 inline-flex items-center justify-center w-16 h-16 lg:w-18 lg:h-18" onClick={()=>setDesc(desc === "html" ? null : "html")}>
-                  <FaHtml5 size={40}/>
+          <div className="w-full h-auto z-40 flex flex-col items-center justify-center gap-2 sm:gap-3">
+          <button className="cursor-pointer p-2 sm:p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105 inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18" onClick={()=>setDesc(desc === "html" ? null : "html")}>
+                  <FaHtml5 size={24} className="sm:w-8 sm:h-8 lg:w-10 lg:h-10"/>
             </button>
-                  <span className="text-base mb-2">HTML5</span>
-            <div className="w-full max-w-36 min-h-16 sm:min-h-18 flex items-start justify-center">
+                  <span className="text-xs sm:text-sm lg:text-base mb-1 sm:mb-2 text-center">HTML5</span>
+            <div className="w-full max-w-32 sm:max-w-36 min-h-12 sm:min-h-16 lg:min-h-18 flex items-start justify-center">
               {desc === "html" && (
                 <p
                   data-aos='fade-left'
                   data-aos-duration='300'
                   data-aos-easing="ease-in-out"
-                  className="flex text-ellipsis justify-center text-sm sm:text-base font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg px-3 py-2 text-slate-200 shadow-lg shadow-purple-900/30 break-words text-center"
+                  className="flex text-ellipsis justify-center text-xs sm:text-sm lg:text-base font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg px-2 sm:px-3 py-1 sm:py-2 text-slate-200 shadow-lg shadow-purple-900/30 break-words text-center"
                 >
                   {descriptions.html}
                 </p>
@@ -72,18 +72,18 @@ windows: "Uso o Windows como sistema operacional para o dia a dia. Apesar de nã
             </div>
           </div>
 
-            <div className="w-35 h-30 z-40 flex flex-col items-center justify-center gap-2">
-            <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105 inline-flex items-center justify-center w-16 h-16 lg:w-18 lg:h-18" onClick={()=>setDesc(desc === "css" ? null : "css")}>
-                  <FaCss3 size={40}/>
+            <div className="w-full h-auto z-40 flex flex-col items-center justify-center gap-2 sm:gap-3">
+            <button className="cursor-pointer p-2 sm:p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105 inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18" onClick={()=>setDesc(desc === "css" ? null : "css")}>
+                  <FaCss3 size={24} className="sm:w-8 sm:h-8 lg:w-10 lg:h-10"/>
               </button>
-                  <span className="text-base mb-2">CSS3</span>
-            <div className="w-full max-w-36 min-h-16 sm:min-h-18 flex items-start justify-center">
+                  <span className="text-xs sm:text-sm lg:text-base mb-1 sm:mb-2 text-center">CSS3</span>
+            <div className="w-full max-w-32 sm:max-w-36 min-h-12 sm:min-h-16 lg:min-h-18 flex items-start justify-center">
               {desc === "css" && (
                 <p
                   data-aos='fade-left'
                   data-aos-duration='300'
                   data-aos-easing="ease-in-out"
-                  className="flex text-ellipsis justify-center text-sm sm:text-base font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg px-3 py-2 text-slate-200 shadow-lg shadow-purple-900/30 break-words text-center"
+                  className="flex text-ellipsis justify-center text-xs sm:text-sm lg:text-base font-bold items-center border-2 border-purple-500/60 bg-purple-900/20 rounded-2xl backdrop-blur-lg px-2 sm:px-3 py-1 sm:py-2 text-slate-200 shadow-lg shadow-purple-900/30 break-words text-center"
                 >
                   {descriptions.css}
                 </p>
@@ -209,13 +209,13 @@ windows: "Uso o Windows como sistema operacional para o dia a dia. Apesar de nã
 
     </div>
 
-    <div id='backend' data-aos="fade-up" data-aos-duration="500" className="grid grid-cols-2 mt-15 mb-15">
+    <div id='backend' data-aos="fade-up" data-aos-duration="500" className="grid grid-cols-1 sm:grid-cols-2 mt-8 sm:mt-12 lg:mt-15 mb-8 sm:mb-12 lg:mb-15 gap-4 sm:gap-6">
 
         <div className="h-full w-full flex justify-center items-center">
-        <p className="font-bold text-2xl sm:text-3xl lg:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">Back-end</p>
+        <p className="font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">Back-end</p>
         </div>
 
-      <div className="grid grid-cols-4 items-center justify-center w-full h-full">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 items-center justify-center w-full h-full gap-2 sm:gap-4 mt-2 sm:mt-0">
 
             <div className="w-35 h-30 z-30 flex flex-col items-center justify-center gap-2">
                 <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105 inline-flex items-center justify-center w-16 h-16 lg:w-18 lg:h-18" onClick={()=>setDesc(desc === "php" ? null : "php")}>
@@ -277,13 +277,13 @@ windows: "Uso o Windows como sistema operacional para o dia a dia. Apesar de nã
      </div>
     </div>
 
-    <div id="ferramentas" data-aos="fade-up" data-aos-duration="500" className="grid grid-cols-2 mt-15 mb-15">
+    <div id="ferramentas" data-aos="fade-up" data-aos-duration="500" className="grid grid-cols-1 sm:grid-cols-2 mt-8 sm:mt-12 lg:mt-15 mb-8 sm:mb-12 lg:mb-15 gap-4 sm:gap-6">
 
       <div className="h-full w-full flex justify-center items-center">
-        <p className="font-bold text-2xl sm:text-3xl lg:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">Ferramentas</p>
+        <p className="font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">Ferramentas</p>
        </div>
 
-      <div className="grid grid-cols-4 items-center justify-center w-full h-full">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 items-center justify-center w-full h-full gap-2 sm:gap-4 mt-2 sm:mt-0">
 
             <div className="w-35 h-30 z-30 flex flex-col items-center justify-center gap-2">
                 <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105 inline-flex items-center justify-center w-16 h-16 lg:w-18 lg:h-18" onClick={()=>setDesc(desc === "mysql" ? null : "mysql")}>
@@ -440,14 +440,14 @@ windows: "Uso o Windows como sistema operacional para o dia a dia. Apesar de nã
     </div>
 
 
-    <div id="sistemas" data-aos="fade-up" data-aos-duration="500" className="flex mt-15 mb-15 justify-around items-center w-full h-full">
+    <div id="sistemas" data-aos="fade-up" data-aos-duration="500" className="grid grid-cols-1 sm:grid-cols-2 mt-8 sm:mt-12 lg:mt-15 mb-8 sm:mb-12 lg:mb-15 gap-4 sm:gap-6">
 
       <div className="h-full w-full flex justify-center items-center">
-        <p className="font-bold text-2xl sm:text-3xl lg:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">OSs</p>
+        <p className="font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">OSs</p>
       </div>
 
 
-      <div className="grid grid-cols-2 items-center justify-center w-full h-full">
+      <div className="grid grid-cols-2 items-center justify-center w-full h-full gap-2 sm:gap-4 mt-2 sm:mt-0">
 
             <div className="w-35 h-30 z-20 flex flex-col items-center justify-center gap-2">
                         <button className="cursor-pointer p-3 rounded-xl bg-purple-900/20 hover:bg-purple-800/30 ring-1 ring-purple-500/20 hover:ring-purple-400/40 transition-transform duration-200 hover:scale-105 inline-flex items-center justify-center w-16 h-16 lg:w-18 lg:h-18" onClick={()=>setDesc(desc === "ubuntu" ? null : "ubuntu")}>
